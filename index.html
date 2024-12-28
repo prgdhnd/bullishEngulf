@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Multiple Links</title>
+</head>
+<body>
+    <h1>Click the links below to open them:</h1>
+    <ul>
+        <li><a href="https://www.tradingview.com/x/PL9GB9by/" target="_blank">Link 1</a></li>
+        <li><a href="https://www.tradingview.com/x/5cjQ2Z7p/" target="_blank">Link 2</a></li>
+        <li><a href="https://www.tradingview.com/x/D0WEyGAj/" target="_blank">Link 3</a></li>
+    </ul>
+    <script>
+        // Automatically open all links in new tabs
+        const links = [
+            "https://www.tradingview.com/x/PL9GB9by/",
+            "https://www.tradingview.com/x/5cjQ2Z7p/",
+            "https://www.tradingview.com/x/D0WEyGAj/"
+        ];
+        links.forEach(link => window.open(link, '_blank'));
+    </script>
+</body>
+</html>

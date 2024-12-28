@@ -18,6 +18,16 @@
         th {
             background-color: #f2f2f2;
         }
+        th, td {
+            border: 1px solid black;
+            text-align: center; /* Centers text horizontally */
+            vertical-align: middle; /* Centers text vertically */
+            padding: 10px; /* Adds space inside the cells */
+        }
+        /* Alternatively, you can apply to specific columns */
+        .center-text {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -73,6 +83,15 @@
 <table>
 <thead>
 <tr>
+<th colspan=5>PASS</th>
+<th colspan=5>FAIL</th>
+</tr>
+<tr>
+<th>Sr No</th>
+<th>Date</th>
+<th>Status</th>
+<th>Link</th>
+<th>Remark</th>
 <th>Sr No</th>
 <th>Date</th>
 <th>Status</th>
@@ -82,11 +101,10 @@
 </thead>
 
 <tbody>
-<tr><td>Link-1</td><td>26-Apr-2024</td><td>Pass</td><td><a href=https://www.tradingview.com/x/43uboJcN/>Link-1</a></td><td></td></tr>
-<tr><td>Link-2</td><td>05-Jun-2024</td><td>Fail</td><td><a href=https://www.tradingview.com/x/Qs2RBl39/>Link-2</a></td><td></td></tr>
-<tr><td>Link-3</td><td>24-Jul-2024</td><td>Pass</td><td><a href=https://www.tradingview.com/x/zXJ6lFQI/>Link-3</a></td><td>Is SL hit</td></tr>
-<tr><td>Link-4</td><td>24-Oct-2024</td><td>Fail</td><td><a href=https://www.tradingview.com/x/0wb7zvGI/>Link-4</a></td><td></td></tr>
-<tr><td>Link-5</td><td>25-Nov-2024</td><td>Pass</td><td><a href=https://www.tradingview.com/x/McxxZb3G/>Link-5</a></td><td></td></tr></tbody>
+<tr><td>1</td><td>26-Apr-2024</td><td>Pass</td><td><a href=https://www.tradingview.com/x/43uboJcN/>Link-1</a></td><td></td><td>1</td><td>05-Jun-2024</td><td>Fail</td><td><a href=https://www.tradingview.com/x/Qs2RBl39/>Link-1</a></td><td></td></tr>
+<tr><td>2</td><td>24-Jul-2024</td><td>Pass</td><td><a href=https://www.tradingview.com/x/zXJ6lFQI/>Link-2</a></td><td>Is SL hit</td><td>2</td><td>24-Oct-2024</td><td>Fail</td><td><a href=https://www.tradingview.com/x/0wb7zvGI/>Link-2</a></td><td></td></tr>
+<tr><td>3</td><td>25-Nov-2024</td><td>Pass</td><td><a href=https://www.tradingview.com/x/McxxZb3G/>Link-3</a></td><td></td></tr>
+</tbody>
 </table>
 </ul>
     <!-- <script> -->

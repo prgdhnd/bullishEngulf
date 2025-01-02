@@ -38,6 +38,17 @@
             text-decoration: underline;
         }
     </style>
+	<script>
+        function generateLink(event, fileName) {
+            event.preventDefault(); // Prevent default link behavior
+            // Generate a random token
+            const randomToken = Math.random().toString(36).substring(2, 15);
+            const url = `${fileName}?token=${randomToken}`;
+
+            // Open the link in a new tab
+            window.open(url, '_blank');
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -47,15 +58,13 @@
     <nav>
         <h2>Bullish and Bearish Engulf</h2>
         <ul>
-            <li><a href="bajaj_finance_engulf.html">1. Bajaj-Finanace</a></li>
-            <li><a href="nifty_engulf.html">2. Nifty</a></li>
-            <li><a href="naturalgas_engulf.html">3. Natural Gas</a></li>
+            <li><a href="#" onclick="generateLink(event, 'bajaj_finance_engulf.html')">1. Bajaj-Finanace</a></li>
+            <li><a href="#" onclick="alert('Backtesting is in progress');">2. Nifty</a></li>
         </ul>
         <h2>Hammer</h2>
         <ul>
-             <li><a href="bajaj_finance_hammer.html">1. Bajaj-Finanace</a></li>
-            <li><a href="nifty_hammer.html">2. Nifty</a></li>
-            <li><a href="naturalgas_hammer.html">3. Natural Gas</a></li>
+            <li><a href="#" oonclick="alert('Backtesting is in progress');">1. Bajaj-Finanace</a></li>
+            <li><a href="#" onclick="alert('Backtesting is in progress');">2. Nifty</a></li>
         </ul>
     </nav>
 </body>
